@@ -38,7 +38,8 @@ def bfs(campus, start, goal):
 def manhattan(state, goal):
     """TODO 1: Return Manhattan distance between two (row, column) tuples."""
     # Add the absolute row difference and the absolute column difference.
-    raise NotImplementedError("Complete TODO 1: manhattan")
+    #raise NotImplementedError("Complete TODO 1: manhattan")
+    return (abs(state[0]-goal[0])+abs(state[1]-goal[1]))
 
 
 def astar(campus, start, goal):
