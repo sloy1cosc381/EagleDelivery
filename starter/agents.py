@@ -46,7 +46,13 @@ def astar(campus, start, goal):
     """TODO 2: Return SearchResult(path, expanded) for A* graph search."""
     # Use heapq as a priority queue and manhattan() as the heuristic.
     # Track best known g-costs and parent states in dictionaries.
-    raise NotImplementedError("Complete TODO 2: astar")
+    #raise NotImplementedError("Complete TODO 2: astar")
+    path=[start]
+    expanded=0
+
+    if(path[-1]==goal):
+        return SearchResult(path,expanded)
+    return SearchResult(None,expanded)
 
 
 def epsilon_greedy(q_values, state, actions, epsilon, rng):
